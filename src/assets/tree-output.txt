@@ -3960,14 +3960,14 @@
 │       └── pacman-maze.png
 ├── README.md
 ├── src
-│   ├── App.css
 │   ├── App.jsx
 │   ├── assets
 │   │   ├── alvaro.png
 │   │   ├── ana.PNG
+│   │   ├── arbol_renderizado_react.drawio.png
 │   │   ├── favicon.ico
 │   │   ├── icon-github.png
-│   │   ├── jes.png
+│   │   ├── jessica.png
 │   │   ├── pacman-maze.png
 │   │   ├── styles
 │   │   │   ├── jessica.css
@@ -3978,6 +3978,7 @@
 │   │   │   ├── treeVisualizer.css
 │   │   │   └── vir.css
 │   │   ├── tomas.png
+│   │   ├── tree-output.txt
 │   │   └── vir.png
 │   ├── componentes
 │   │   ├── AgregarBitacora.jsx
@@ -3985,7 +3986,6 @@
 │   │   ├── Educacion.jsx
 │   │   ├── EfectoEscrituraAna.jsx
 │   │   ├── Footer.jsx
-│   │   ├── Frase.jsx
 │   │   ├── Habilidades.jsx
 │   │   ├── HeaderIntegrantes.jsx
 │   │   ├── HeaderPortadaBitacora.jsx
@@ -3993,7 +3993,6 @@
 │   │   ├── Idiomas.jsx
 │   │   ├── LectorLibros.jsx
 │   │   ├── LectorUsuarios.jsx
-│   │   ├── ModoOscuro.jsx
 │   │   ├── MostrarOcultar.jsx
 │   │   ├── Musica.jsx
 │   │   ├── PeliculasFavoritas.jsx
@@ -4016,5 +4015,6 @@
 │       ├── DatosAPI.jsx
 │       ├── DatosArchivoJSON.jsx
 │       ├── DiagramaCarpetas.jsx
+│       ├── PaginaNoEncontrada.jsx
 │       └── Portada.jsx
 └── vite.config.js
