@@ -12,7 +12,7 @@ const ArbolRenderizado = () => {
       <Sidebar/>
       <div className="main-content">
       <h1 style={{textAlign:"center"}}>Árbol de Renderizado</h1>
-      <img src={imgArbol} alt="árbol de renderización" style={{width:"100%",height:"90%"}}/>
+      <img src={imgArbol} alt="árbol de renderización" className="arbol"/>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
