@@ -17,6 +17,8 @@ const Bitacora = () => {
     "Funcionalidades de React como filtro por integrantes, agregado de lista, alert, etc.",
     "Se agregó ícono de toda la página.",
     "Agregamos sección con link al repositorio de GitHub.",
+	"Implementación del diagrama para mostrar las estructura de carpetas.",
+	"Diagrama de la estructura React.",
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
   ];
 
