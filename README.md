@@ -1,16 +1,18 @@
 # TP DE PRESENTACIÓN DEL GRUPO 12
 
-<!-- <img width="1883" height="894" alt="image" src="https://github.com/user-attachments/assets/213c5c2e-af55-4ed7-97b0-a5ad3400ce1d" /> -->
-
 ## Descripción
 En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a React, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **React**.  
 La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes efectos visuales y funcionalidades, respetando la estética retro y creativa que nos caracteriza.
-Lo importante es el uso de componentes reutilizables con y sin props, con la utilización de children, como el uso de useState, useCallback useEffect y useRef, a eso le sumamos el React Router.
+Lo importante es el uso de componentes reutilizables con y sin props, con la utilización de children, como el uso de useState, useCallback, useEffect,useRef y useMemo y a eso le sumamos el React Router.
 
 ## Mejoras
-### Título de la mejora 1
-- Descripción de la mejora(también agregarlo en bitácora)
-- Poner img antes y después de la mejora
+### Búsqueda/Filtrado en JSON Local (Ana)
+- En la página Datos JSON (sobre libros) se implementaron 5 select(dropdown) para realizar filtros por título, autor, género, año de publicación e idioma. Se pueden unir diferentes filtros, por ejemplo: género con idioma. Si no hay coincidencias saldrá un h2 mostrando "No hay libros que se ajusten a los filtros".
+![Imágen en el TP anterior](/src/assets/imgMejoras/imgMejora1/sin_filtros_puestos.PNG)
+![Imágen con los filtros vacíos](/src/assets/imgMejoras/imgMejora1/filtros_vacios.PNG)
+![Imágen con filtro de autor](/src/assets/imgMejoras/imgMejora1/filtro_autor.PNG)
+![Imágen con filtro de autor y año](/src/assets/imgMejoras/imgMejora1/filtro_autor_anio.PNG)
+![Imágen con filtros pero sin resultados](/src/assets/imgMejoras/imgMejora1/filtro_sin_datos.PNG)
 ### Título de la mejora 2
 - Descripción de la mejora(también agregarlo en bitácora)
 - Poner img antes y después de la mejora

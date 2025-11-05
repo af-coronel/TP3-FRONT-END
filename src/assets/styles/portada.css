@@ -105,9 +105,27 @@ h2 {
   border-radius: 0.4rem;
 }
 
-.filtro-input:focus {
+.filtro-input:focus,.filtro-select-json:focus {
   outline: none;
   border-color: #2196f3;
+}
+
+.select-json-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.filtro-select-json {
+  width: 25%;
+  max-width: 380px;
+  padding: 0.7rem 0.9rem;
+  border: 0.2rem solid #161616;
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0.4rem 0.4rem 0 0 #161616;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
 }
 
 /* ======== BOTÓN ======== */
