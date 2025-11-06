@@ -1,6 +1,7 @@
 import "../assets/styles/tarjetaLibro.css";
 import { useState, useEffect, useMemo } from "react";
 import TarjetaLibro from "./TarjetaLibro";
+import FiltroSelect from "./FiltroSelect";
 import datosLibros from "../../public/data.json";
 
 const LectorLibros = () => {
@@ -70,56 +71,17 @@ const LectorLibros = () => {
   return (
     <div>
       <h1 style={{textAlign:"center",margin:"50px 0px"}}>Catálogo de Libros (Datos JSON)</h1>
-            <div className="select-json-container">
-        <select
-          className="filtro-select-json"
-          onChange={(e) => setFiltroTitulo(e.target.value)}
-        >
-          <option value="">Filtrar por título...</option>
-          {titulos.map((titulo) => (
-            <option key={titulo} value={titulo}>{titulo}</option>
-          ))}
-        </select>
+      <div className="select-json-container">
+        <FiltroSelect label="Filtrar por título..." opciones={titulos} value={filtroTitulo} onChange={setFiltroTitulo} />
       </div>
       <div className="select-json-container">
-        <select
-          className="filtro-select-json"
-          onChange={(e) => setFiltroAutor(e.target.value)}
-        >
-          <option value="">Filtrar por autor...</option>
-          {autores.map((autor) => (
-            <option key={autor} value={autor}>{autor}</option>
-          ))}
-        </select>
-        <select
-          className="filtro-select-json"
-          onChange={(e) => setFiltroGenero(e.target.value)}
-        >
-          <option value="">Filtrar por género...</option>
-          {generos.map((genero) => (
-            <option key={genero} value={genero}>{genero}</option>
-          ))}
-        </select>
+        <FiltroSelect label="Filtrar por autor..." opciones={autores} value={filtroAutor} onChange={setFiltroAutor} />
+        <FiltroSelect label="Filtrar por género..." opciones={generos} value={filtroGenero} onChange={setFiltroGenero} />
       </div>
+
       <div className="select-json-container">
-        <select
-          className="filtro-select-json"
-          onChange={(e) => setFiltroAnio(e.target.value)}
-        >
-          <option value="">Filtrar por año de publicación...</option>
-          {anios.map((anio) => (
-            <option key={anio} value={anio}>{anio}</option>
-          ))}
-        </select>
-        <select
-          className="filtro-select-json"
-          onChange={(e) => setFiltroIdioma(e.target.value)}
-        >
-          <option value="">Filtrar por idioma...</option>
-          {idiomas.map((idioma) => (
-            <option key={idioma} value={idioma}>{idioma}</option>
-          ))}
-        </select>
+        <FiltroSelect label="Filtrar por año..." opciones={anios} value={filtroAnio} onChange={setFiltroAnio} />
+        <FiltroSelect label="Filtrar por idioma..." opciones={idiomas} value={filtroIdioma} onChange={setFiltroIdioma} />
       </div>
       <div className="contenedor-libros">
         {librosFiltrados.length > 0 ? (
