@@ -7,6 +7,8 @@ import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
 import imgJessica from "../assets/jessica.png";
 import "../assets/styles/jessica.css";
+import SkillBars from "../componentes/SkillBars";
+
 
 const Jessica = () => {
   const [quote, setQuote] = useState("");
@@ -72,6 +74,8 @@ const Jessica = () => {
             <li className="quote">Maria Becerra</li>
           </ul>
         </MostrarOcultar>
+
+        <SkillBars />
 
         <Footer>
           <p>© 2025 Equipo Retro Front End Grupo 12</p>
