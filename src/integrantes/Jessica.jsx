@@ -1,7 +1,7 @@
 import "../assets/styles/portada.css";
 import { useState } from "react";
 import Sidebar from "../componentes/Sidebar";
-import HeaderIntegrantes from "../componentes/HeaderIntegrantes"; 
+import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
@@ -21,6 +21,15 @@ const Jessica = () => {
     "Haz hoy lo que tu futuro yo te agradecerá."
   ];
 
+  {/* arrglo de las habilidades */ }
+  const habilidadesJessica = [
+    { nombre: "HTML", nivel: 95 },
+    { nombre: "CSS", nivel: 90 },
+    { nombre: "JavaScript", nivel: 80 },
+    { nombre: "Trabajo en equipo", nivel: 85 },
+    { nombre: "Diseño UI", nivel: 70 },
+  ];
+
   const newQuote = () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[randomIndex]);
@@ -31,19 +40,19 @@ const Jessica = () => {
       <Sidebar />
       <div className="main-content">
         <HeaderIntegrantes>
-        <div className="hero">
-          <img src={imgJessica} alt="Jessica" className="avatar"/>
-          <h1>Jessica Oleszuk</h1>
-          <p className="info" style={{  fontFamily: "'Poppins', sans-serif"}}>Ubicación: Tucumán | Edad: 38 años</p>
-        </div>
+          <div className="hero">
+            <img src={imgJessica} alt="Jessica" className="avatar" />
+            <h1>Jessica Oleszuk</h1>
+            <p className="info" style={{ fontFamily: "'Poppins', sans-serif" }}>Ubicación: Tucumán | Edad: 38 años</p>
+          </div>
         </HeaderIntegrantes>
-        <span style={{marginTop:"30px"}}></span>
+        <span style={{ marginTop: "30px" }}></span>
         <SobreMi
-        titulo="Sobre mí"
-        descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
-      />
+          titulo="Sobre mí"
+          descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
+        />
 
-                {/* Frases motivacionales */}
+        {/* Frases motivacionales */}
         <div >
           <h2>Te dejo una frase de regalo</h2>
           <div className="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
@@ -75,7 +84,13 @@ const Jessica = () => {
           </ul>
         </MostrarOcultar>
 
-        <SkillBars />
+        {/* <SkillBars /> */}
+         <h2 class="titulo-habilidades">Mis habilidades</h2>
+        <SkillBars
+          skills={habilidadesJessica}
+          colorFrom="#7A4AFF"   // violeta saturado
+          colorTo="#C1A4FF"     // lila claro
+        />
 
         <Footer>
           <p>© 2025 Equipo Retro Front End Grupo 12</p>

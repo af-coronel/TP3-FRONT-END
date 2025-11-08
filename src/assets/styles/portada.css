@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&display=swap");
 
 /* ======== BASE GLOBAL ======== */
 html {
@@ -12,11 +12,12 @@ body {
   background-color: #f9f9f9;
   color: #222;
   font-family: Inter, sans-serif;
-  
 }
 
 /* ======== TITULOS ======== */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Press Start 2P", monospace;
   letter-spacing: 0.5px;
   word-break: break-word;
@@ -53,6 +54,8 @@ h2 {
   flex-direction: column;
   padding: 2rem 3rem;
   width: 100%;
+  /* Added margin to prevent content from being hidden behind fixed sidebar */
+  margin-left: 15vw;
 }
 
 /* ======== SECCIONES ======== */
@@ -60,9 +63,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  /* Center content in the white area, removed specific margin-left since main-content handles it */
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
+  padding: 0;
 }
 
 /* ======== BLOQUES CON MARCO ======== */
@@ -105,12 +110,13 @@ h2 {
   border-radius: 0.4rem;
 }
 
-.filtro-input:focus,.filtro-select-json:focus {
+.filtro-input:focus,
+.filtro-select-json:focus {
   outline: none;
   border-color: #2196f3;
 }
 
-.select-json-container{
+.select-json-container {
   display: flex;
   justify-content: space-around;
   margin-top: 1.5rem;
@@ -194,13 +200,12 @@ h2 {
 }
 
 /* ======== FOOTER ======== */
-.footer{
+.footer {
   text-align: center;
   color: #475569;
   font-size: 14px;
   margin-top: auto;
 }
-
 
 .footer-integrantes {
   text-decoration: none;
@@ -209,10 +214,9 @@ h2 {
   padding: 0.3rem;
 }
 
-.arbol{
+.arbol {
   width: 80vw;
   height: 80vh;
-
 }
 
 /* ======== BREAKPOINTS ======== */
@@ -227,7 +231,8 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .header-portada-bitacora, .github-section {
+  .header-portada-bitacora,
+  .github-section {
     padding: 1.8rem;
     border-width: 0.2rem;
     box-shadow: 0.5rem 0.5rem 0 0 #161616;
@@ -240,20 +245,26 @@ h2 {
     flex-direction: column;
   }
 
-  .header-portada-bitacora{
+  .header-portada-bitacora {
     margin-top: 50px;
     width: 85%;
   }
 
   .main-content {
     padding: 1.8rem;
-      display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Reset margin on mobile when sidebar is hidden */
+    margin-left: 0;
   }
 
-  .content-sections{
+  .content-sections {
     margin-top: 50px;
+    /* Reset centering on mobile */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 
   h1 {
@@ -268,10 +279,9 @@ h2 {
     width: 90%;
   }
 
-  .arbol{
+  .arbol {
     width: 95vw;
   }
-  
 }
 
 /* --- <=400px --- */
@@ -285,14 +295,16 @@ h2 {
     font-size: 0.85rem;
   }
 
-    .main-content {
+  .main-content {
     padding: 1.8rem;
-      display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Reset margin on mobile when sidebar is hidden */
+    margin-left: 0;
   }
 
-  .header-portada-bitacora{
+  .header-portada-bitacora {
     width: 85%;
   }
 
@@ -311,5 +323,3 @@ h2 {
     width: 80%;
   }
 }
-
-

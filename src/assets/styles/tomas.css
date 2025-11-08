@@ -13,6 +13,7 @@
 /* Área de contenido principal, a la derecha del sidebar */
 .integrante-content {
   flex-grow: 1;
+  margin-left: 15vw; /* Added margin-left to avoid sidebar overlap */
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -62,7 +63,6 @@
 .side-by-side-wrapper > section {
   flex: 1;
 }
-
 
 /* ====== Sección de Columnas Desplegables (Acordeón) ====== */
 
@@ -134,18 +134,18 @@
   border-radius: 8px;
 }
 
-
 /* ====== Ajustes para Móviles (Responsive) ====== */
 @media (max-width: 900px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .integrante-container {
     flex-direction: column;
   }
   .integrante-content {
+    margin-left: 0; /* Reset margin on mobile */
     padding: 20px;
   }
   #tomas-avatar {
@@ -160,4 +160,3 @@
     flex-direction: column;
   }
 }
-

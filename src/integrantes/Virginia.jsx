@@ -11,6 +11,7 @@ import Footer from "../componentes/Footer";
 import Habilidades from "../componentes/Habilidades";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 import Musica from "../componentes/Musica";
+import SkillBars from "../componentes/SkillBars";
 
 const tags = [
   "HTML", "CSS", "JavaScript", "React", "Vite", "React Router"
@@ -32,6 +33,16 @@ const canciones = [
   "🎵 Vangelis: Chariots Of Fire",
   "🎵 Electric Light Orchestra: Time",
   "🎵 Pet Shop Boys: Always On My Mind",
+];
+
+{/* arrglo de las hailidaddes para pasar al skillbar */}
+const habilidadesVirginia = [
+  { nombre: "React", nivel: 80 },
+  { nombre: "PHP / Yii2", nivel: 90 },
+  { nombre: "MySQL", nivel: 90 },
+  { nombre: "HTML", nivel: 95 },
+  { nombre: "CSS", nivel: 95 },
+  { nombre: "JS", nivel: 95 },
 ];
 
 export default function Virginia() {
@@ -79,14 +90,10 @@ export default function Virginia() {
         {/* Tarjetas tipo pixel (blancas en modo normal) */}
         <div className="vir-grid">
           <div className="pixel-card">
-
-            <Habilidades>
+            <div>
               <h2>Habilidades</h2>
-              <ul id="skills-list" className="skills-grid">
-                {skills.map((s) => <li key={s}>{s}</li>)}
-              </ul>
-            </Habilidades>
-
+              <SkillBars skills={habilidadesVirginia} colorFrom="#6A3FA0" colorTo="#E48DA6" />
+            </div>
           </div>
 
           <div className="pixel-card">

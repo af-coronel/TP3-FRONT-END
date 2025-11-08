@@ -1,38 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "../assets/styles/SkillBars.css";
 
-const SkillBars = () => {
-  const [animate, setAnimate] = useState(false);
-
-  const skills = [
-    { name: "HTML", level: 95 },
-    { name: "CSS", level: 90 },
-    { name: "JavaScript", level: 80 },
-    { name: "Trabajo en equipo", level: 85 },
-    { name: "Diseño UI", level: 70 },
-  ];
-
-  useEffect(() => {
-    const timer = setTimeout(() => setAnimate(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
-
+function SkillBars({
+  skills = [],
+  colorFrom = "#FFD300", // amarillo
+  colorTo = "#00AEEF",   // celeste
+  showPercent = true,
+}) {
   return (
-    <div className="skills-container fade-in">
-      <h2>Mis habilidades</h2>
+    <div className="skills-container">
       {skills.map((skill, index) => (
-        <div key={index} className="skill">
-          <div className="skill-name">
-            <span>{skill.name}</span>
-            <span>{skill.level}%</span>
-          </div>
-          <div className="progress-bar">
+        <div key={index} className="skill-item">
+          <div className="skill-name">{skill.nombre}</div>
+          <div className="skill-bar">
             <div
-              className="progress-fill"
+              className="skill-fill"
               style={{
-                width: animate ? `${skill.level}%` : "0%",
+                width: `${skill.nivel}%`,
+                background: `linear-gradient(90deg, ${colorFrom}, ${colorTo})`,
               }}
-            ></div>
+            />
+            {showPercent && <span className="skill-percent">{skill.nivel}%</span>}
           </div>
         </div>
       ))}

@@ -1,9 +1,9 @@
-import "../assets/styles/portada.css";
-import { Link } from "react-router-dom";
-import Sidebar from "../componentes/Sidebar";
-import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
-import AgregarBitacora from "../componentes/AgregarBitacora";
-import Footer from "../componentes/Footer";
+import "../assets/styles/portada.css"
+import { Link } from "react-router-dom"
+import Sidebar from "../componentes/Sidebar"
+import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora"
+import AgregarBitacora from "../componentes/AgregarBitacora"
+import Footer from "../componentes/Footer"
 
 const Bitacora = () => {
   const bitacoraItems = [
@@ -18,31 +18,48 @@ const Bitacora = () => {
     "Se agregó ícono de toda la página.",
     "En la página Datos JSON (sobre libros) se implementaron 5 select(dropdown) para realizar filtros por título, autor, género, año de publicación e idioma. Se pueden unir diferentes filtros, por ejemplo: género con idioma. Si no hay coincidencias saldrá un h2 mostrando 'No hay libros que se ajusten a los filtros'.",
     "Agregamos sección con link al repositorio de GitHub.",
-	"Implementación del diagrama para mostrar las estructura de carpetas.",
-	"Diagrama de la estructura React.",
+    "Implementación del diagrama para mostrar las estructura de carpetas.",
+    "Diagrama de la estructura React.",
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
-  ];
+  ]
 
   return (
     <div className="portada-container">
       <Sidebar />
-      <div className="content-sections">
-      <div className="header-portada-bitacora">
-      <HeaderPortadaBitacora titulo="Bitácora" />
-      <AgregarBitacora itemsIniciales={bitacoraItems} /></div>
-      <Footer>
-        <p>
-          © 2025 Equipo Retro Front End Grupo 12 — 
-          <Link to="/integrantes/tomas" className="footer-integrantes">Tomás</Link> - 
-          <Link to="/integrantes/virginia" className="footer-integrantes">Virginia</Link> - 
-          <Link to="/integrantes/jessica" className="footer-integrantes">Jessica</Link> - 
-          <Link to="/integrantes/alvaro" className="footer-integrantes">Álvaro</Link> - 
-          <Link to="/integrantes/ana" className="footer-integrantes">Ana</Link>
-        </p>
-        <p>Insert Coin 💾</p>
-      </Footer>
+      <div className="main-content">
+        <div className="content-sections">
+          <div className="header-portada-bitacora">
+            <HeaderPortadaBitacora titulo="Bitácora" />
+            <AgregarBitacora itemsIniciales={bitacoraItems} />
+          </div>
+          <Footer>
+            <p>
+              © 2025 Equipo Retro Front End Grupo 12 —
+              <Link to="/integrantes/tomas" className="footer-integrantes">
+                Tomás
+              </Link>{" "}
+              -
+              <Link to="/integrantes/virginia" className="footer-integrantes">
+                Virginia
+              </Link>{" "}
+              -
+              <Link to="/integrantes/jessica" className="footer-integrantes">
+                Jessica
+              </Link>{" "}
+              -
+              <Link to="/integrantes/alvaro" className="footer-integrantes">
+                Álvaro
+              </Link>{" "}
+              -
+              <Link to="/integrantes/ana" className="footer-integrantes">
+                Ana
+              </Link>
+            </p>
+            <p>Insert Coin 💾</p>
+          </Footer>
+        </div>
       </div>
     </div>
-  );
-};
-export default Bitacora;
+  )
+}
+export default Bitacora
