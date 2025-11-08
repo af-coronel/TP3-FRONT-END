@@ -1,14 +1,22 @@
 import "../assets/styles/portada.css";
 import imgAna from "../assets/ana.PNG";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import EfectoEscrituraAna from "../componentes/EfectoEscrituraAna";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import SkillBars from "../componentes/SkillBars";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
 
 const Ana = () => {
+
+  const habilidadesAna = [
+  { nombre: "HTML", nivel: 90 },
+  { nombre: "CSS", nivel: 85 },
+  { nombre: "JS", nivel: 80 },
+  { nombre: "Colaborativa", nivel: 95 },
+  { nombre: "Proactiva", nivel: 95 },
+];
 
   return (
     <div className="portada-container">
@@ -19,9 +27,7 @@ const Ana = () => {
           <img src={imgAna} alt="Imagen de ana" style={{width:"15%",borderRadius:"15%"}}></img>
       </HeaderIntegrantes>
       <MostrarOcultar titulo="Habilidades" widthClassName="boton-agregar-bitacora-ancho">
-        <ul className="lista-portada">
-          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Colaborativa</li><li>Proactiva</li>
-        </ul>
+        <SkillBars skills={habilidadesAna}/>    
       </MostrarOcultar>
       <MostrarOcultar titulo="Películas favoritas" widthClassName="boton-agregar-bitacora-ancho">
         <ul className="lista-portada"><li>Titanic</li><li>Pasajeros</li><li>Diario de una pasión</li></ul>
