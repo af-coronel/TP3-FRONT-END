@@ -13,6 +13,7 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ![Imágen con filtro de autor](/src/assets/imgMejoras/imgMejora1/filtro_autor.PNG)
 ![Imágen con filtro de autor y año](/src/assets/imgMejoras/imgMejora1/filtro_autor_anio.PNG)
 ![Imágen con filtros pero sin resultados](/src/assets/imgMejoras/imgMejora1/filtro_sin_datos.PNG)
+
 ### ## Mejora: Barras de Progreso de Habilidades (Jessica)
 
 **Descripción:**  
