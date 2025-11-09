@@ -17,7 +17,7 @@ const Bitacora = () => {
     "Funcionalidades de React como filtro por integrantes, filtros para los datos del JSON, agregado de lista, alert, etc.",
     "Se agregó ícono de toda la página.",
     "En la página Datos JSON (sobre libros) se implementaron 5 select(dropdown) para realizar filtros por título, autor, género, año de publicación e idioma. Se pueden unir diferentes filtros, por ejemplo: género con idioma. Si no hay coincidencias saldrá un h2 mostrando 'No hay libros que se ajusten a los filtros'.",
-    "Se agregó una barra de habilidades para mejorar la presentación visual y mostrar el nivel de dominio en diferentes tecnologías."
+    "Se agregó una barra de habilidades para mejorar la presentación visual y mostrar el nivel de dominio en diferentes tecnologías.",
     "Agregamos sección con link al repositorio de GitHub.",
     "Implementación del diagrama para mostrar las estructura de carpetas.",
     "Diagrama de la estructura React.",
