@@ -49,7 +49,7 @@ const Sidebar = () => {
             <Link to="/paginas/diagramacarpetas">Diagrama de carpetas</Link>
           </li>
           <li>
-            <button className="submenu-toggle btn-proyecto" onClick={toggleIntegrantes}>
+            <button className="submenu-toggle" onClick={toggleIntegrantes}>
               {mostrarIntegrantes ? "▼ Integrantes" : "► Integrantes"}
             </button>
           

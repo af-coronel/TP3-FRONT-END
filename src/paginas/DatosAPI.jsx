@@ -7,7 +7,7 @@ import Footer from "../componentes/Footer";
 const DatosAPI = () => {
 
   return (
-    <div className="portada-container">
+    <div className="portada-container page-container-fade-in">
       <Sidebar/>
       <div className="main-content">
       <h1 style={{textAlign:"center",marginTop:"50px"}}>Datos de la API Randomuser</h1>

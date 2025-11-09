@@ -58,7 +58,8 @@ export default function Virginia() {
   }, [pac]);
 
   return (
-    <div className="portada-container vir-page">
+    /* --- MODIFICACIÓN AQUÍ (Página) --- */
+    <div className="portada-container vir-page page-container-fade-in">
       <Sidebar />
 
       {/* igual que Ana/Jessica */}
@@ -89,14 +90,14 @@ export default function Virginia() {
 
         {/* Tarjetas tipo pixel (blancas en modo normal) */}
         <div className="vir-grid">
-          <div className="pixel-card">
+          <div className="pixel-card card-item">
             <div>
               <h2>Habilidades</h2>
               <SkillBars skills={habilidadesVirginia} colorFrom="#6A3FA0" colorTo="#E48DA6" />
             </div>
           </div>
 
-          <div className="pixel-card">
+          <div className="pixel-card card-item">
             <PeliculasFavoritas>
               <h2>Películas</h2>
               <ul id="peli-list">
@@ -107,7 +108,7 @@ export default function Virginia() {
             </PeliculasFavoritas>
           </div>
 
-          <div className="pixel-card">
+          <div className="pixel-card card-item">
             <Musica>
               <h2>Música</h2>
               <ul id="musica-list">
@@ -129,7 +130,7 @@ export default function Virginia() {
       {/* Botón flotante Pac-Mode (no deforma el layout) */}
       <button
         type="button"
-        className="pac-fab"
+        className="pac-fab btn-proyecto"
         aria-label="Alternar modo Pac-Man"
         title={pac ? "Salir Pac-Mode" : "Activar Pac-Mode"}
         onClick={() => setPac((v) => !v)}

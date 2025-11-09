@@ -10,13 +10,15 @@ const HydraCanvas = () => {
       const canvas = canvasRef.current;
       if (!canvas) return;
 
+      // 1. Inicializa Hydra con un tamaño temporal (no importa cuál)
       const hydra = new window.Hydra({
         canvas: canvas,
         detectAudio: false,
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 1,  // Tamaño temporal
+        height: 1, // Tamaño temporal
       });
 
+      // 2. Pega tu código visual de Hydra
       window.speed = 0.1;
       window.osc(100, -0.0018, 0.17)
         .diff(window.osc(20, 0.00008).rotate(Math.PI / 0.00003))
@@ -38,14 +40,22 @@ const HydraCanvas = () => {
         .contrast(1.6)     
         .out();
 
+      // 3. Define la función de resize (esta es la lógica que SÍ funciona)
       const handleResize = () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        hydra.setResolution(window.innerWidth, window.innerHeight);
+        const dpr = window.devicePixelRatio || 1;
+        // setResolution actualiza el tamaño interno (bitmap) del canvas
+        hydra.setResolution(window.innerWidth * dpr, window.innerHeight * dpr);
       };
 
+      // 4. Asigna el listener para el futuro
       window.addEventListener('resize', handleResize);
 
+      // --- 5. LA SOLUCIÓN ---
+      // Llama a la función una vez de inmediato para 
+      // establecer la resolución correcta en la carga inicial.
+      handleResize();
+
+      // 6. Configura la limpieza
       return () => {
         window.removeEventListener('resize', handleResize);
       };
@@ -55,9 +65,11 @@ const HydraCanvas = () => {
 
     return () => {
       document.body.removeChild(script);
+      // Opcional: podrías querer limpiar la instancia de Hydra aquí si existe
     };
   }, []); 
 
+  // El estilo CSS no cambia, se encarga del tamaño de *visualización*
   return <canvas id="hydra-canvas" ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -1, width: '100vw', height: '100vh' }}></canvas>;
 };
 

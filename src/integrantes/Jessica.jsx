@@ -36,7 +36,8 @@ const Jessica = () => {
   };
 
   return (
-    <div className="portada-container body">
+    /* --- MODIFICACIÓN AQUÍ (Página) --- */
+    <div className="portada-container body page-container-fade-in">
       <Sidebar />
       <div className="main-content">
         <HeaderIntegrantes>
@@ -56,7 +57,7 @@ const Jessica = () => {
         <div >
           <h2>Te dejo una frase de regalo</h2>
           <div className="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
-          <button className="btn" onClick={newQuote}>Nueva frase</button>
+          <button className="btn btn-proyecto" onClick={newQuote}>Nueva frase</button>
         </div>
 
         <MostrarOcultar titulo="Habilidades" botonClassName="btn">
@@ -85,7 +86,7 @@ const Jessica = () => {
         </MostrarOcultar>
 
         {/* <SkillBars /> */}
-         <h2 class="titulo-habilidades">Mis habilidades</h2>
+         <h2 className="titulo-habilidades">Mis habilidades</h2>
         <SkillBars
           skills={habilidadesJessica}
           colorFrom="#7A4AFF"   // violeta saturado

@@ -24,7 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-
+  display: flex;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -53,63 +54,62 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* --- MEJORA: Animaciones Suaves (TP3) --- */
+
+/* 1. Animación de Botón (para usar con className="btn-proyecto") */
 .btn-proyecto {
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
-  background-color: #646cff;
+  background-color: #646cff; /* Color de ejemplo, puedes ajustarlo */
   color: white;
   cursor: pointer;
   font-weight: bold;
-
-  transition: transform 0.3s ease, background-color 0.3s ease,
-    box-shadow 0.3s ease;
+  
+  /* Transición suave para transform, color y sombra */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-proyecto:hover {
-  background-color: #535bf2;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #535bf2; /* Un color ligeramente más oscuro */
+  transform: translateY(-2px); /* Mueve el botón 2px hacia arriba */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para efecto "levantado" */
 }
 
-.social-btn {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-btn:hover {
-  transform: scale(1.15);
-  opacity: 0.8;
-}
-
+/* 2. Animación de Tarjeta (para usar con className="card-item") */
 .card-item {
-  background: #1a1a1a;
+  background: #1a1a1a; /* Color de fondo para modo oscuro */
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+  
+  /* Transición suave para transform y sombra */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03); /* Escala la tarjeta un 3% */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
+/* 3. Transición al Cargar Tarjetas (Keyframes) */
 @keyframes fadeInSlideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px); /* Empieza 20px más abajo */
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* Termina en su posición original */
   }
 }
 
+/* 3a. Clase para aplicar la animación de carga (className="card-load-animation") */
 .card-load-animation {
   animation: fadeInSlideUp 0.5s ease-out forwards;
-  opacity: 0;
+  opacity: 0; /* Empieza invisible */
 }
 
+/* 3b. (Opcional) Efecto escalonado (staggering) para listas */
 .card-load-animation:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -119,7 +119,10 @@ button:focus-visible {
 .card-load-animation:nth-child(3) {
   animation-delay: 0.3s;
 }
+/* ...puedes añadir más si es necesario... */
 
+
+/* 4. Transición de Carga de Página (Keyframes) */
 @keyframes pageFadeIn {
   from {
     opacity: 0;
@@ -129,9 +132,13 @@ button:focus-visible {
   }
 }
 
+/* 4a. Clase para aplicar la animación de página (className="page-container-fade-in") */
 .page-container-fade-in {
   animation: pageFadeIn 0.4s ease-in forwards;
 }
+
+/* --- FIN de Animaciones Suaves --- */
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -144,13 +151,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
+  
+  /* --- MEJORA: Estilos light-mode para tarjetas --- */
   .card-item {
-    background: #ffffff;
+    background: #ffffff; /* Color de fondo para modo claro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   }
 
   .card-item:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada */
   }
 }

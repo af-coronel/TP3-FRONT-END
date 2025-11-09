@@ -1,18 +1,16 @@
 import "../assets/styles/portada.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "../componentes/Sidebar";
-import imgArbol from "../assets/arbol_renderizado_react.drawio.png"
+import LectorLibros from "../componentes/LectorLibros";
 import Footer from "../componentes/Footer";
 
-const ArbolRenderizado = () => {
+const DatosArchivoJSON = () => {
 
   return (
-    <div className="portada-container page-container-fade-in">
+    <div className="portada-container">
       <Sidebar/>
       <div className="main-content">
-      <h1 style={{textAlign:"center"}}>Árbol de Renderizado</h1>
-      <img src={imgArbol} alt="árbol de renderización" className="arbol"/>
+      <LectorLibros/>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
@@ -24,4 +22,4 @@ const ArbolRenderizado = () => {
     </div>
   )
 }
-export default ArbolRenderizado
+export default DatosArchivoJSON

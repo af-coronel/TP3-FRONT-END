@@ -5,7 +5,7 @@ const TarjetaLibro = ({libro}) => {
 
 
   return (
-     <div className="tarjeta-libro card-item">
+     <div className="tarjeta-libro">
       <p>📚 {titulo}</p>
       <p>
         <strong>Autor:</strong> {autor}

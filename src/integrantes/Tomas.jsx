@@ -7,17 +7,29 @@ import Footer from "../componentes/Footer";
 import HydraCanvas from '../componentes/HydraCanvas';
 import Dropdown from '../componentes/Dropdown'; 
 import "../assets/styles/tomas.css"; 
-
+import SkillBars from '../componentes/SkillBars'; // <-- 1. Importar
 
 const Tomas = () => {
   const [dropdownsOpen, setDropdownsOpen] = useState(false);
+
+  // --- 2. Crear el array de habilidades ---
+  const habilidadesTomas = [
+    { nombre: "Python", nivel: 90 },
+    { nombre: "SQL", nivel: 75 },
+    { nombre: "Admin. de Sistemas (Linux/Win)", nivel: 85 },
+    { nombre: "Diagnóstico Hardware", nivel: 80 },
+    { nombre: "Análisis y Visualización de Datos", nivel: 70 },
+    { nombre: "Evaluación de Motores de Búsqueda", nivel: 65 },
+    { nombre: "Soporte a Sistemas de TI", nivel: 75 },
+  ];
+  // ----------------------------------------
 
   const toggleDropdowns = () => {
     setDropdownsOpen(prevState => !prevState);
   };
 
   return (
-    <div className="integrante-container">
+    <div className="integrante-container page-container-fade-in">
       <HydraCanvas />
       
       <Sidebar />
@@ -85,16 +97,13 @@ const Tomas = () => {
         </section>
         
         <section className="dropdown-section">
+          {/* --- 3. Reemplazar la <ul> --- */}
           <Dropdown title="Habilidades" isOpen={dropdownsOpen} onClick={toggleDropdowns}>
-            <ul>
-              <li>Python (Avanzado)</li>
-              <li>SQL (Intermedio)</li>
-              <li>Administración de sistemas (Linux y Windows)</li>
-              <li>Diagnóstico y reparación de hardware</li>
-              <li>Análisis y visualización de datos</li>
-              <li>Evaluación de motores de búsqueda</li>
-              <li>Soporte a sistemas de TI</li>
-            </ul>
+            <SkillBars 
+              skills={habilidadesTomas} 
+              colorFrom="#FFD300" /* Amarillo (default) */
+              colorTo="#00AEEF"   /* Celeste (default) */
+            />
           </Dropdown>
 
           <Dropdown title="Idiomas" isOpen={dropdownsOpen} onClick={toggleDropdowns}>
@@ -130,4 +139,3 @@ const Tomas = () => {
 };
 
 export default Tomas;
-

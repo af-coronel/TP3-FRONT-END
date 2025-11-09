@@ -94,7 +94,12 @@ const LectorLibros = () => {
       </div>
       <div className="contenedor-libros">
         {librosFiltrados.length > 0 ? (
-          librosFiltrados.map((libro) => <TarjetaLibro key={libro.id} libro={libro} />)
+          librosFiltrados.map((libro) => (
+            /* --- MODIFICACIÓN AQUÍ --- */
+            <div key={libro.id} className="card-load-animation">
+              <TarjetaLibro libro={libro} />
+            </div>
+          ))
         ) : (
           <h2 style={{ marginTop: "40px", textAlign: "center", color: "#444" }}>
             No hay libros que se ajusten a los filtros

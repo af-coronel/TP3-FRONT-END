@@ -6,7 +6,9 @@ const PaginaNoEncontrada = () => {
     textAlign: "center",
     padding: "50px",
     fontFamily: "Inter, sans-serif",
-  }}>
+  }}
+    className="page-container-fade-in"
+  >
       <h1 style={{
     fontSize: "2rem",
     color: "#ef4444",
@@ -29,6 +31,3 @@ const PaginaNoEncontrada = () => {
 };
 
 export default  PaginaNoEncontrada;
-
-
- 

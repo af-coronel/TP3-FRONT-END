@@ -46,7 +46,7 @@ const Portada = () => {
   const filtrados = integrantes.filter((integrante) => normalizar(integrante.nombre).startsWith(normalizar(filtro)))
 
   return (
-    <div className="portada-container page-container-fade-in">
+    <div className="portada-container">
       <Sidebar />
       <div className="main-content">
         <div className="content-sections">
@@ -80,15 +80,9 @@ const Portada = () => {
               />
             </div>
 
-            {/* --- MODIFICACIÓN AQUÍ --- */}
-            <div className="team">
+            <div className="team" style={{ display: "flex", gap: "2px" }}>
               {filtrados.map((integrante) => (
-                <TarjetaIntegrante 
-                  key={integrante.nombre} 
-                  {...integrante} 
-                  /* Le pasamos la clase de animación como prop */
-                  animationClassName="card-load-animation"
-                />
+                <TarjetaIntegrante key={integrante.nombre} {...integrante} />
               ))}
 
               {filtrados.length === 0 && <p style={{ marginTop: "10px" }}>No se encontraron integrantes.</p>}

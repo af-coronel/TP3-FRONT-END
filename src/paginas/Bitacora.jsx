@@ -22,10 +22,13 @@ const Bitacora = () => {
     "Implementación del diagrama para mostrar las estructura de carpetas.",
     "Diagrama de la estructura React.",
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
+    "Mejora 1 (Animaciones): Se implementaron transiciones (`transition`) y animaciones (`@keyframes`) con CSS puro para efectos hover y carga de elementos (tarjetas, botones, páginas).",
+    "Mejora 5 (Barras de Habilidades): Se integró el componente reutilizable `SkillBars` en las páginas de perfil de los integrantes.",
+    "Corrección de bugs: Se solucionaron errores de layout (CSS `body` y `flex-wrap`), renderizado de Hydra (HiDPI `devicePixelRatio`) y `fetch` de la API (error `JSON.parse`)."
   ]
 
   return (
-    <div className="portada-container">
+    <div className="portada-container page-container-fade-in">
       <Sidebar />
       <div className="main-content">
         <div className="content-sections">

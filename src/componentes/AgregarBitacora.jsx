@@ -35,7 +35,7 @@ const AgregarBitacora = ({ itemsIniciales }) => {
           <li key={index} style={{ borderLeft:"4px solid #2196f3",borderRadius:"6px",transition:"background 0.3s ease, transform 0.2s ease",lineHeight:"1.65", padding:"5px 10px" }}>
             {item}
             <button
-              className=""
+              className="social-btn" /* Clase para hover de ícono */
               onClick={() => handleBorrar(index)}
               style={{ marginLeft: "10px" }}
             >
@@ -53,7 +53,7 @@ const AgregarBitacora = ({ itemsIniciales }) => {
           placeholder="Escribí una nueva entrada..."
           className="filtro-input"
         />
-        <button className="boton-agregar-bitacora" onClick={handleAgregar}>
+        <button className="boton-agregar-bitacora btn-proyecto" onClick={handleAgregar}>
           Agregar
         </button>
       </div>

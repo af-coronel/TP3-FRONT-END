@@ -22,7 +22,7 @@ const Footer = ({children}) => {
   }, []);
 
   return (
-    <footer ref={footerRef} className="footer">
+    <footer ref={footerRef} className="footer card-item">
       {children}
     </footer>
   );

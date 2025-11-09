@@ -6,8 +6,7 @@ const Dropdown = ({ title, children, isOpen, onClick }) => {
   // Se eliminó el estado interno (useState)
 
   return (
-    // Usa las props recibidas para definir la clase y el evento onClick
-    <div className={`dropdown-column ${isOpen ? 'active' : ''}`} onClick={onClick}>
+    <div className={`dropdown-column card-item ${isOpen ? 'active' : ''}`} onClick={onClick}>
       <h3 className="dropdown-title">{title}</h3>
       <div className="dropdown-content">
         {children}
@@ -17,4 +16,3 @@ const Dropdown = ({ title, children, isOpen, onClick }) => {
 };
 
 export default Dropdown;
-

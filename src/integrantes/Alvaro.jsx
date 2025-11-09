@@ -12,7 +12,7 @@ const Alvaro = () => {
   return (
     <>
       <Sidebar />
-      <div style={{ marginLeft: "15vw", paddingLeft: "2rem", paddingRight: "2rem" }}>
+      <div style={{ marginLeft: "15vw", paddingLeft: "2rem", paddingRight: "2rem" }} className="page-container-fade-in">
         <HeaderIntegrantes>
           <h1>Alvaro Coronel Castellani</h1>
           <p> Ubicación: Córdoba, Argentina | Edad: 30</p>

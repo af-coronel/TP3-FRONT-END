@@ -86,7 +86,7 @@ const TreeVisualizer = () => {
   }, []);
 
   return (
-    <div className="portada-container">
+    <div className="portada-container page-container-fade-in">
       <Sidebar />
       <div className="main-content">
         <h1 style={{ textAlign: "center" }}>Estructura del Proyecto</h1>
@@ -115,4 +115,3 @@ const TreeVisualizer = () => {
 };
 
 export default TreeVisualizer;
-

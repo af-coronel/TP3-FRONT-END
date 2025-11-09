@@ -19,7 +19,7 @@ const Ana = () => {
 ];
 
   return (
-    <div className="portada-container">
+    <div className="portada-container page-container-fade-in">
       <Sidebar/>
       <div className="main-content">
       <HeaderIntegrantes>

@@ -17,7 +17,7 @@ const MostrarOcultar = ({titulo,children,botonClassName = "boton-agregar-bitacor
             {children}
           </div>
          )}
-        <button onClick={visibleONo} className={`${botonClassName} ${widthClassName}`}>
+        <button onClick={visibleONo} className={`${botonClassName} ${widthClassName} btn-proyecto`}>
           {isVisible ? 'Ocultar' : 'Mostrar'}
         </button>
       </div>
