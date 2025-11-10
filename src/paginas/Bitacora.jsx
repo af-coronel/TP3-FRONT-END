@@ -22,12 +22,9 @@ const Bitacora = () => {
     "Implementación del diagrama para mostrar las estructura de carpetas.",
     "Diagrama de la estructura React.",
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
-<<<<<<< HEAD
-    "Se agregaron botones de redes sociales al pie del sidebar azul, con animación al hover que es un cambio de fondo a un degradado con los colores del ícono del sitio. ",
-=======
+    "Se agregaron botones de redes sociales al pie del sidebar azul, con animación al hover que es un cambio de fondo a un degradado con los colores del ícono del sitio.",
     "Mejora 3 (Animaciones): Se implementaron transiciones (`transition`) y animaciones (`@keyframes`) con CSS puro para efectos hover y carga de elementos (tarjetas, botones, páginas).",
     "Corrección de bugs: Se solucionaron errores de layout (CSS `body` y `flex-wrap`), renderizado de Hydra (HiDPI `devicePixelRatio`) y `fetch` de la API (error `JSON.parse`)."
->>>>>>> 4a86438a63ab05f1cb606a059abefe7326baf2ed
   ]
 
   return (
@@ -69,8 +66,5 @@ const Bitacora = () => {
     </div>
   )
 }
-<<<<<<< HEAD
+
 export default Bitacora
-=======
-export default Bitacora
->>>>>>> 4a86438a63ab05f1cb606a059abefe7326baf2ed

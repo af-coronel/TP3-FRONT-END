@@ -54,11 +54,11 @@ Los efectos buscan mejorar la experiencia visual sin afectar el rendimiento, man
 - En la **carga de páginas**, se utilizó una animación de entrada progresiva de los elementos para dar sensación de fluidez.  
 
 **Antes:**  
-![Antes - Tomas](src/assets/imgMejorasTomas/antes.gif)  
+![Antes - Tomas](public/img/imgMejorasTomas/antes.gif)
 *(Los elementos aparecían de forma estática sin transiciones ni efectos visuales)*  
 
 **Después:**  
-![Después - Tomas](src/assets/imgMejorasTomas/despues.gif)  
+![Después - Tomas](public/img/imgMejorasTomas/despues.gif) 
 *(Los elementos ahora cuentan con animaciones suaves y coherentes con la estética general del proyecto)*  
 
 
