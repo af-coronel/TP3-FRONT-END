@@ -6,7 +6,7 @@ La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes 
 Lo importante es el uso de componentes reutilizables con y sin props, con la utilización de children, como el uso de useState, useCallback, useEffect,useRef y useMemo y a eso le sumamos el React Router.
 
 ## Mejoras
-### Búsqueda/Filtrado en JSON Local (Ana)
+### Mejora 1: Búsqueda/Filtrado en JSON Local (Ana)
 - En la página Datos JSON (sobre libros) se implementaron 5 select(dropdown) para realizar filtros por título, autor, género, año de publicación e idioma. Se pueden unir diferentes filtros, por ejemplo: género con idioma. Si no hay coincidencias saldrá un h2 mostrando "No hay libros que se ajusten a los filtros".
 ![Imágen en el TP anterior](/src/assets/imgMejoras/imgMejora1/sin_filtros_puestos.PNG)
 ![Imágen con los filtros vacíos](/src/assets/imgMejoras/imgMejora1/filtros_vacios.PNG)
@@ -14,12 +14,10 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ![Imágen con filtro de autor y año](/src/assets/imgMejoras/imgMejora1/filtro_autor_anio.PNG)
 ![Imágen con filtros pero sin resultados](/src/assets/imgMejoras/imgMejora1/filtro_sin_datos.PNG)
 
-### ## Mejora: Barras de Progreso de Habilidades (Jessica)
+### Mejora 2: Barras de Progreso de Habilidades (Jessica)
 
 **Descripción:**  
 Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
-=======
-- Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades de Jessica. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
 
 **Antes:**  
 ![Antes](src/assets/imgMejorasJessica/antes.png)  
@@ -29,21 +27,7 @@ Se implementaron barras de progreso animadas para mostrar visualmente el nivel d
 ![Después](src/assets/imgMejorasJessica/despues.png)  
 *(Ahora se muestran barras animadas con la paleta de colores del sitio)*
 
-### Mejora: Botones de redes sociales en el Sidebar (Virginia)
-
-**Descripción:**  
-Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, con **animación al hover**:
-- Hover: leve *lift* (+translateY) y *scale*; cambio de fondo a un **degradado** con los colores del ícono del sitio. 
-- Implementación: SVGs inline (sin dependencias), bloque pegado abajo con `margin-top: auto` dentro del sidebar (que usa `display: flex; flex-direction: column;`).
-
-**Antes:**  
-![Antes - Virginia](public/img/imgAntesVirginia.png)
-
-**Después:**  
-![Después - Virginia](public/img/imgDespVirginia.png)
-
-=======
-### Animaciones (Tomas)
+### Mejora 3: Animaciones (Tomas)
 
 **Descripción:**  
 Se implementaron **transiciones (`transition`) y animaciones (`@keyframes`)** con **CSS puro** para generar efectos visuales dinámicos en tarjetas, botones y la carga de las páginas.  
@@ -62,12 +46,29 @@ Los efectos buscan mejorar la experiencia visual sin afectar el rendimiento, man
 *(Los elementos ahora cuentan con animaciones suaves y coherentes con la estética general del proyecto)*  
 
 
-### Título de la mejora 4
-- Descripción de la mejora(también agregarlo en bitácora)
-- Poner img antes y después de la mejora
-### Título de la mejora 5
-- Descripción de la mejora(también agregarlo en bitácora)
-- Poner img antes y después de la mejora
+### Mejora 4: Botones de redes sociales en el Sidebar (Virginia)
+
+**Descripción:**  
+Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, con **animación al hover**:
+- Hover: leve *lift* (+translateY) y *scale*; cambio de fondo a un **degradado** con los colores del ícono del sitio. 
+- Implementación: SVGs inline (sin dependencias), bloque pegado abajo con `margin-top: auto` dentro del sidebar (que usa `display: flex; flex-direction: column;`).
+
+**Antes:**  
+![Antes - Virginia](public/img/imgAntesVirginia.png)
+
+**Después:**  
+![Después - Virginia](public/img/imgDespVirginia.png)
+
+
+### Mejora 5: ...
+
+**Descripción:**  
+....
+**Antes:**  
+....
+
+**Después:**  
+.....
 
 ## 🛠️ Tecnologías utilizadas
 - **React**
