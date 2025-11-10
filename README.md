@@ -54,14 +54,11 @@ Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, co
 - Implementación: SVGs inline (sin dependencias), bloque pegado abajo con `margin-top: auto` dentro del sidebar (que usa `display: flex; flex-direction: column;`).
 
 **Antes:**  
-<p align="center">
-  <img src="public/img/imgAntesVirginia.png" alt="Antes - Virginia" width="380">
-</p>
+![Antes - Virginia](public/img/imgMejorasVirginia/imgAntesVirginia.png)
 
 **Después:**  
-<p align="center">
-  <img src="public/img/imgDespVirginia.png" alt="Después - Virginia" width="380">
-</p>
+![Después - Virginia](public/img/imgMejorasVirginia/imgDespVirginia.png)
+
 
 ### Mejora 5: ...
 
