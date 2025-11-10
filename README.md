@@ -43,8 +43,24 @@ Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, co
 ![Después - Virginia](public/img/imgDespVirginia.png)
 
 =======
-### Animaciones (Tomás)
-- Mejora 3 (Animaciones): Se implementaron transiciones (`transition`) y animaciones (`@keyframes`) con CSS puro para efectos hover y carga de elementos (tarjetas, botones, páginas).
+### Animaciones (Tomas)
+
+**Descripción:**  
+Se implementaron **transiciones (`transition`) y animaciones (`@keyframes`)** con **CSS puro** para generar efectos visuales dinámicos en tarjetas, botones y la carga de las páginas.  
+Los efectos buscan mejorar la experiencia visual sin afectar el rendimiento, manteniendo la estética retro del sitio.  
+
+- En las **tarjetas** se añadieron animaciones de aparición con *fade-in* y *slide-up*.  
+- En los **botones**, se aplicaron transiciones suaves en el hover con cambios de color y escala.  
+- En la **carga de páginas**, se utilizó una animación de entrada progresiva de los elementos para dar sensación de fluidez.  
+
+**Antes:**  
+![Antes - Tomas](src/assets/imgMejorasTomas/antes.gif)  
+*(Los elementos aparecían de forma estática sin transiciones ni efectos visuales)*  
+
+**Después:**  
+![Después - Tomas](src/assets/imgMejorasTomas/despues.gif)  
+*(Los elementos ahora cuentan con animaciones suaves y coherentes con la estética general del proyecto)*  
+
 
 ### Título de la mejora 4
 - Descripción de la mejora(también agregarlo en bitácora)
