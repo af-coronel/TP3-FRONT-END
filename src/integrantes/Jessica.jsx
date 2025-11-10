@@ -86,13 +86,14 @@ const Jessica = () => {
         </MostrarOcultar>
 
         {/* <SkillBars /> */}
-         <h2 className="titulo-habilidades">Mis habilidades</h2>
-        <SkillBars
-          skills={habilidadesJessica}
-          colorFrom="#7A4AFF"   // violeta saturado
-          colorTo="#C1A4FF"     // lila claro
-        />
-
+        <div style={{ marginBottom: "50px" }}>
+          <h2 className="titulo-habilidades">Mis habilidades</h2>
+          <SkillBars
+            skills={habilidadesJessica}
+            colorFrom="#7A4AFF"   // violeta saturado
+            colorTo="#C1A4FF"     // lila claro
+          />
+        </div>
         <Footer>
           <p>© 2025 Equipo Retro Front End Grupo 12</p>
         </Footer>
