@@ -17,7 +17,11 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ### ## Mejora: Barras de Progreso de Habilidades (Jessica)
 
 **Descripción:**  
+<<<<<<< HEAD
+Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
+=======
 - Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades de Jessica. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
+>>>>>>> 4a86438a63ab05f1cb606a059abefe7326baf2ed
 
 **Antes:**  
 ![Antes](src/assets/imgMejorasJessica/antes.png)  
@@ -27,8 +31,25 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ![Después](src/assets/imgMejorasJessica/despues.png)  
 *(Ahora se muestran barras animadas con la paleta de colores del sitio)*
 
+<<<<<<< HEAD
+
+### Mejora: Botones de redes sociales en el Sidebar (Virginia)
+
+**Descripción:**  
+Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, con **animación al hover**:
+- Hover: leve *lift* (+translateY) y *scale*; cambio de fondo a un **degradado** con los colores del ícono del sitio. 
+- Implementación: SVGs inline (sin dependencias), bloque pegado abajo con `margin-top: auto` dentro del sidebar (que usa `display: flex; flex-direction: column;`).
+
+**Antes:**  
+![Antes - Virginia](public/img/imgAntesVirginia.png)
+
+**Después:**  
+![Después - Virginia](public/img/imgDespVirginia.png)
+
+=======
 ### Animaciones (Tomás)
 - Mejora 3 (Animaciones): Se implementaron transiciones (`transition`) y animaciones (`@keyframes`) con CSS puro para efectos hover y carga de elementos (tarjetas, botones, páginas).
+>>>>>>> 4a86438a63ab05f1cb606a059abefe7326baf2ed
 ### Título de la mejora 4
 - Descripción de la mejora(también agregarlo en bitácora)
 - Poner img antes y después de la mejora
