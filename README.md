@@ -49,15 +49,17 @@ Los efectos buscan mejorar la experiencia visual sin afectar el rendimiento, man
 ### Mejora 4: Botones de redes sociales en el Sidebar (Virginia)
 
 **Descripción:**  
-Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, con **animación al hover**:
+Se agregaron botones de redes sociales **circulares** al pie del sidebar azul, con **animación al hover**:
 - Hover: leve *lift* (+translateY) y *scale*; cambio de fondo a un **degradado** con los colores del ícono del sitio. 
 - Implementación: SVGs inline (sin dependencias), bloque pegado abajo con `margin-top: auto` dentro del sidebar (que usa `display: flex; flex-direction: column;`).
 
 **Antes:**  
 ![Antes - Virginia](public/img/imgMejorasVirginia/imgAntesVirginia.png)
+*(Barra lateral izquierda sin iconos de redes sociales)*  
 
 **Después:**  
 ![Después - Virginia](public/img/imgMejorasVirginia/imgDespVirginia.png)
+*(Barra lateral izquierda con iconos de redes sociale, con efecto de animación al hover. Iconos por medio de SVGs para no tener dependencias.)*  
 
 <p align="center">
   <img src="public/img/imgMejorasVirginia/botones.gif" alt="Detalle botones" ><br>
