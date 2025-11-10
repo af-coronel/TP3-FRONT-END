@@ -17,7 +17,6 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ### ## Mejora: Barras de Progreso de Habilidades (Jessica)
 
 **Descripción:**  
-<<<<<<< HEAD
 Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
 =======
 - Se implementaron barras de progreso animadas para mostrar visualmente el nivel de habilidades de Jessica. Cada barra refleja el porcentaje de dominio de la habilidad correspondiente (HTML, CSS, JavaScript, Trabajo en equipo, Diseño UI).  
@@ -30,8 +29,6 @@ Se implementaron barras de progreso animadas para mostrar visualmente el nivel d
 **Después:**  
 ![Después](src/assets/imgMejorasJessica/despues.png)  
 *(Ahora se muestran barras animadas con la paleta de colores del sitio)*
-
-<<<<<<< HEAD
 
 ### Mejora: Botones de redes sociales en el Sidebar (Virginia)
 
