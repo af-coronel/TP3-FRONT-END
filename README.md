@@ -59,7 +59,7 @@ Se agregaron botones de redes sociales **ciculares** al pie del sidebar azul, co
 **Después:**  
 ![Después - Virginia](public/img/imgMejorasVirginia/imgDespVirginia.png)
 
-![Detalle botones](public/img/imgMejorasVriginia/botones.git)
+![Detalle botones](public/img/imgMejorasVriginia/botones.gif)
 *(Detalle de los botones y su efecto de hover)*  
 
 ### Mejora 5: ...
